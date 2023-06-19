@@ -30,6 +30,8 @@ source myworld/bin/activate
 pip install -r requirements.txt
 ```
 4. Installing the Database (Postgres)
+   * For Windows:
+   ** Download the Windows installer from [https://example.com](https://exle.com)here by following the steps from here   
 ## Technologies
 Project is created with:
 * Lorem version: 12.3
