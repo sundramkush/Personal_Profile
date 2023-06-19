@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>name</td>
+            <td>past_address</td>
+            <td>current_address</td>
+            <td>ph_number</td>
+            <td><a href="{% url 'profile_insert' %} " class="btn btn-outline-success">
+                <i class="fas fa-plus"></i>Add New
+            </a>
+            </td>
+        </tr>
+    </thead>
+    <body>
+        {% for profile in list %}
+            <tr>
+                <td>{{profile.name}}</td>
+                <td>{{profile.past_address}}</td>
+                <td>{{profile.current_address}}</td>
+                <td>{{profile.ph_number}}</td>
+                <td>
+                    <a href="{% url 'profile_update' profile.id %} " style="color: olive">EDIT</a>
+                    <a href="{% url 'profile_delete' profile.id %} " style="color: red">DELETE</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </body>
+</table>
+
+<a href="{% url 'logout' %}">Logout</a>
+{% endblock content %}
