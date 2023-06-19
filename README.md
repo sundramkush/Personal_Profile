@@ -3,9 +3,33 @@
 * [Run](#run)
 * [Test](#test)
 
+# Note: Python 3.7 or above must be installed.
+
 ## Build
-This project is simple Lorem ipsum dolor generator.
-	
+1. Clone the repo:
+```
+git clone https://github.com/sundramkush/Personal_Profile.git
+```
+2. Make a virtual environment and activate it:
+* For Windows:
+```
+py -m venv myworld
+```
+```
+myworld\Scripts\activate.bat
+```
+* For Unix/MacOS:
+```
+python3 -m venv myworld
+```
+```
+source myworld/bin/activate
+```
+3. Installing the requirements using pip
+```
+pip install -r requirements.txt
+```
+4. Installing the Database (Postgres)
 ## Technologies
 Project is created with:
 * Lorem version: 12.3
