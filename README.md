@@ -26,15 +26,15 @@ pip install -r requirements.txt
 ```
 4. Installing  and Running the Database (Postgres) (Postgresql 15 Recommended)
    * For Windows:
-   ** Download the Windows installer from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) by following the steps from [postgresqltutorial-Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/) to successfully install all the dependencies of the database server.
+   * * Download the Windows installer from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) by following the steps from [postgresqltutorial-Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/) to successfully install all the dependencies of the database server.
    * For MacOS:
-   ** Download the macOS installer from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) by following the steps from [postgresqltutorial-MacOS](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/) to successfully install all the dependencies of the database server.
+   * * Download the macOS installer from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) by following the steps from [postgresqltutorial-MacOS](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/) to successfully install all the dependencies of the database server.
    * For Unix:
-   ** Follow the steps [here](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/) for Unix installation of Postgresql
+   * * Follow the steps [here](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/) for Unix installation of Postgresql
    * After completing the installation and setting up a Postgresql server, Create a database for the application to connect.
      
 5. Configure the settings.py in the Personal_Profile folder with the details of the database configured before in the Databases section of the file after line 85:
-'''
+   '''
    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -43,8 +43,7 @@ pip install -r requirements.txt
         'HOST': 'localhost'  
     }
 }
-
-'''
+	'''
 
 ### Note: Make sure the database server is running to continue to the next steps.
 
