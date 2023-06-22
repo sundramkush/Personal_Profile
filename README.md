@@ -62,7 +62,7 @@ py manage.py runserver
 python3 manage.py migrate
 python3 manage.py runserver
 ```
-3. To run the test suite:
+2. To run the test suite:
 * For Windows:
 ```
 py manage.py test
