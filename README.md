@@ -54,10 +54,12 @@ pip install -r requirements.txt
 1. To run the application, write this command inside the project directory and go to your browser to open [localhost page](http://127.0.0.1:8000/).
 * For Windows:
 ```
+py manage.py migrate
 py manage.py runserver 
 ```
 * For macOS/Linux:
 ```
+python3 manage.py migrate
 python3 manage.py runserver
 ```
 3. To run the test suite:
