@@ -1,4 +1,4 @@
-# A simple CRUD Application for managing a person's details like name, address, contact number, etc created using Python, Django and Postgre SQL using Oauth Protocol.
+## A simple CRUD Application for managing a person's details like name, address, contact number, etc created using Python, Django and Postgre SQL using Oauth Protocol.
 
 ## Note: Python 3.7 or above must be installed.
 
